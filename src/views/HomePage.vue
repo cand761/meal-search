@@ -20,5 +20,9 @@ onMounted(async () => {
   <div class="p-8 pb-0 text-orange-500">
     <h1 class="text-4xl font-bold mb-4">Random Meals</h1>
   </div>
-  <Meals :meals="meals"></Meals>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <Meals :meals="meals" />
+  </div>
 </template>
+
